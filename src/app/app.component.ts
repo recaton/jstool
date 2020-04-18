@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'jstool';
+
+  from: string;
+  to: string;
+
+  public onTransfer() {
+    console.log(this.from);
+    this.to = this.from;
+  }
+
 }
